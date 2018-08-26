@@ -1,0 +1,74 @@
+#card_container{
+	border:  2px dashed green;
+	width: 100%;
+	height: auto;
+	background: lightblue;
+	position: relative;
+	padding-bottom: 25px;
+	padding-left: 32px;
+
+}
+.useridstyle{
+       border-radius: 8px;
+       background: green;
+       width: 100px;
+       padding: auto;
+       display: inline;
+       margin-right: 18px;
+       padding: 12px;
+
+	}
+.usertitlestyle{
+		margin-top:32px;
+
+	}
+
+.scene {
+  width: 28%;
+  height: 260px;
+  
+  margin: 20px ;
+  display: inline-block;
+  //perspective: 600px;
+}
+
+.card {
+  width: 100%;
+  height: 95%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+
+}
+
+.card.is_flipped {
+  transform: rotateY(180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  //line-height: 260px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  padding:10px;
+  padding-top: 32px;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  border:2px solid blue;
+}
+
+.card__face--front {
+  background: red;
+}
+
+.card__face--back {
+  background: blue;
+  transform: rotateY(180deg);
+  margin-left: -20px;
+  font-family: cursive;
+}
