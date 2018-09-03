@@ -4,6 +4,7 @@
 	height: auto;
 	background: lightblue;
 	position: relative;
+  padding-top: 20px;
 	padding-bottom: 25px;
 	padding-left: 32px;
 
@@ -28,6 +29,7 @@
   height: 260px;
   
   margin: 20px ;
+  margin-top: 50px;
   display: inline-block;
   //perspective: 600px;
 }
@@ -39,6 +41,7 @@
   transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
+  font-family: cursive;
 
 }
 
@@ -71,4 +74,7 @@
   transform: rotateY(180deg);
   margin-left: -20px;
   font-family: cursive;
+}
+.card:focus{
+  color:blue;
 }

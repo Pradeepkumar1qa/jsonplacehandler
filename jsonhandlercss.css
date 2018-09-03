@@ -7,7 +7,7 @@
 #search_result{
 	position: absolute;
 	margin-top:0px;
-	border:2px solid red;
+	//border:2px solid red;
 	width: 100%;
 	background:#80ced6;
 	border-radius: 5px;
@@ -20,6 +20,7 @@
 	height: 40px;
 	box-shadow:2px;
 	border-radius: 5px;
+	border:3px solid green;
 }
 #suggestion{
 	
@@ -62,4 +63,33 @@
 }
 .card_container{
 	position: relative;
+    
+}
+h3{
+	position: absolute;
+   width:85%;
+   //margin-left: -35px;
+   background: red;
+   margin-top: -10px;
+   border-radius: 8px;
+   padding-left: 20px;
+   height: 35px;
+   color:white;
+   padding-top: 8px;
+   
+   
+   
+
+}
+#msg{
+	
+	animation-name: message;
+	animation-duration:8s;
+	animation-timing-function: linear;
+}
+@keyframes message{
+	from{background:red;}
+	to{background:lightblue;color:lightblue;}
+
+
 }

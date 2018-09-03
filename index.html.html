@@ -9,7 +9,9 @@
 <!-- ---------------------searchbox starts here------------------ -->
 <div id='outer_searchspace'>
 <input type="text" placeholder="please provide some hint" 
-                         id="search" onkeyup="findmatchingresult()" value=''/>
+                         id="search" onkeyup="findmatchingresult()" 
+                         onfocus="gettingFocusOfSearchBox()" 
+                         onfocusout="gettingOutOfFocusOfSearchBox()" value=""/>
 <div id="search_result">
 
 
@@ -20,10 +22,13 @@
 
 <!-- ------------------card container---------------------- -->
 <div id="card_container">
+<h3 id='msg' style="display:none">msg</h3>
 
 
 
 </div>
 </body>
 <script type="text/javascript" src="jsonhandlerjs.js"></script>
+<script type="text/javascript" src="seachcontainer.js"></script>
+
 </html>
